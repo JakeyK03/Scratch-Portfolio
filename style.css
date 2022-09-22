@@ -1,25 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Inconsolata', sans-serif;
-    box-sizing: border-box;
-}
-body{
-    background: #304C89;
-    color: #E8E5DA
 }
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url("img/mountains.jpg") ;
+    height: 100%;
+    background-image: url(img/mountains.jpg);
     background-size: cover;
     background-position: center;
 }
 .container{
     padding: 10px 10%;
-
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -50,4 +42,28 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #CDC392;   
+}
+#about{
+    padding: 80px 0;
+    color: #CDC392;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
 }
