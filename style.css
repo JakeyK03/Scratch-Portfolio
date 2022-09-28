@@ -1,10 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #23272a;
     font-family: 'Source Code Pro', monospace;
-    
+    box-sizing: border-box;
 }
+
+/*
+$desktop:1280px;//col-xl
+$laptop:1000px;//col-lg
+$tablet:768px;//md
+$phone:480px;//sm
+*/  
 
 @font-face {
     font-family: 'Source Code Pro', monospace;
@@ -13,7 +20,7 @@
 #header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #304C8960, #8b000050),url(img/space.jpg);
+    background-image: linear-gradient(to top left, #00000095, #3540b690),url(img/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -26,88 +33,27 @@
 }
 
 .logo{
-    width: 140px;
+    width: 100px;
     margin-left: 30px;
     margin-top: 30px;
     border-radius: 30px;
 }
 
 .header-text{
+    color: #23272a;
+    position: fixed;
     font-size: 30px;
+    margin-top: 0px;
 }
 .header-text h1{
+    color: #23272a;
+    position: relative;
     font-size: 80px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: #7460AA;   
+    margin-top: 10px;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #441D4B;
-    }
-
-.navigation{
-    position: relative;
-    height: 500px;
-    width: 300px;
-    background: linear-gradient(to bottom right, #304C8990, #8b000090);
-    box-shadow: 10px 0 0 #422F90;
-    border-radius: 10px;
-}
-
-.navigation ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 5px;
-    padding-top: 40px;
-}
-
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 100%;
-}
-
-.navigation ul li .active{
-    background: #422F90;
-}
-
-.navigation ul li a{
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.navigation ul li a .icon{
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 95px;
-    line-height: 60px;
-    text-align: center;
-}
-
-.navigation ul li a .icon ion-icon{
-    position: relative;
-    font-size: 1.5em;
-    z-index: 1;
-} 
-
-.navigation ul li a .icon .title{
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 50px;
-    line-height: 60px;
-    white-space: nowrap;
+:root{
+    --body-color: #3540b690;
+    --sidebar-color: #23272a;
+    
 }
