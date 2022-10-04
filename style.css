@@ -34,8 +34,7 @@ $phone:480px;//sm
 }
 
 .logo{
-    position: relative;
-    z-index: 2;
+    position: relative;;
     width: 100px;
     margin-left: 30px;
     margin-top: 30px;
@@ -43,14 +42,12 @@ $phone:480px;//sm
 }
 
 .header-text{
-    z-index: 1;
     color: #ffffff;
     position: fixed;
     font-size: 30px;
     margin-top: 0px;
 }
 .header-text h1{
-    z-index: 1;
     color: #ffffff;
     position: relative;
     font-size: 80px;
@@ -68,29 +65,28 @@ body{
 .openicon{
     font-size: 30px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    margin-left: 90%;
-    margin-bottom: 90%;
+    margin: -795px 20px 80px 1725px;
 }
 .sidenav{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 120px;
     background: linear-gradient(to bottom right, #404eed95, #5865f290);
 }   
 .sidenav a{
-    padding: 8px 8px 8px 32px;
+    padding: 40px 4px 8px 40px;
     text-decoration: none;
     font-size: 25px;
     display: block;
-    color: #bcbccc;
+    color: #ffffff;
     transition: 0.3s;
 }
 .sidenav a:hover{
@@ -98,10 +94,10 @@ body{
 }
 .sidenav .closebtn{
     position: absolute;
+    z-index: 1;
     top: 0;
-    right: 25px;
-    font-size: 35px;
-    margin-left: 50px;
+    right: 80px;
+    font-size: 30px;
 }
 @media screen and (max-height: 450px){
     .sidenav{padding-top: 15px;}
