@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'MODERNA';
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -15,8 +15,8 @@ $phone:480px;//sm
 */  
 
 @font-face {
-    font-family: 'Source Code Pro', monospace;
-    src: url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap);
+    font-family: 'MODERNA';
+    src: url(fonts/SpaceMono-Bold.ttf);
 }
 #header{
     width: 100%;
@@ -24,60 +24,6 @@ $phone:480px;//sm
     background-image: linear-gradient(to top left, #5865f270, #404eed95),url(img/background2.png);
     background-size: cover;
     background-position: center;
-}
-
-.glitch{
-    position: absolute;
-    font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.glitch::before, .glitch::after{
-    position: absolute;
-    content: "Jakub Kaminski";
-    display: block;
-    top: 0;
-    left: 0;
-}
-
-.glitch:hover::before{
-    animation: glitch 0.3s linear 6;
-    color: #e91e63;
-    z-index: -2;
-}
-
-.glitch:hover::after{
-    animation: glitch 0.3s linear 6 reverse;
-    color: #2196f3;
-    z-index: -1;
-}
-
-@keyframes glitch{
-    0%{
-        top: 0;
-        left: 0;
-    }
-    20%{
-        top: -5px;
-        left: -5px;
-    }
-    40%{
-        top: 5px;
-        left: 5px;
-    }
-    60%{
-        top: -5px;
-        left: -5px;
-    }
-    80%{
-        top: 5px;
-        left: -5px;
-    }
-    100%{
-        top: 0;
-        left: 0;
-    }
 }
 
 .container{
@@ -151,7 +97,7 @@ body{
     z-index: 1;
     top: 0;
     right: 80px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 @media screen and (max-height: 450px){
@@ -201,7 +147,7 @@ body{
 .content{
     margin-top: 60px;
     margin-right: 130px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* Skills page */
@@ -227,7 +173,7 @@ body{
     margin-right: 100px;
     background: #1d6f42;
     padding: 40px 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
