@@ -18,6 +18,7 @@ $phone:480px;//sm
     font-family: 'MODERNA';
     src: url(fonts/SpaceMono-Bold.ttf);
 }
+
 #header{
     width: 100%;
     height: 980px;
@@ -58,11 +59,11 @@ body{
 }
 
 .openicon{
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     position: fixed;
     z-index: 2;
-    right: 80px;
+    right: 100px;
     top: 40px;
 }
 
@@ -96,13 +97,17 @@ body{
     position: absolute;
     z-index: 1;
     top: 0;
-    right: 80px;
-    font-size: 25px;
+    right: 100px;
+    font-size: 50px;
 }
 
 @media screen and (max-height: 450px){
     .sidenav{padding-top: 15px;}
     .sidenav a{font-size: 18px;}
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 /* About page */
@@ -236,12 +241,13 @@ body{
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
 
 .layer{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(237 ,170 , 40, 0.7));
+    height: 0%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(237 ,170 , 40, 0.7));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -253,6 +259,21 @@ body{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.projects:hover img{
+    transform: scale(1.1);
+}
+
+.projects:hover .layer{
+    height: 100%;
 }
 
 /* Contact page */
@@ -263,4 +284,36 @@ body{
     background-image: linear-gradient(to top left,#43a7c095, #2d3f7070),url(img/background6.png);
     background-size: cover;
     background-position: center;
+}
+
+.contact-list{
+    font-size: 25px;
+    flex-basis: 35%;
+}
+
+.contact-list p{
+    margin-top: 30px;
+}
+
+.contact-list p i{
+    color: #8daec7;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-3px);
 }
